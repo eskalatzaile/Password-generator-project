@@ -5,26 +5,40 @@
 <body>
     <div class="body-container">
         <div class="title-container">
-            <h1 class="title-txt">Password Generator</h1>
-            <p>Create a <span class="green-txt-color">secure and random</span> password</p>
+            <h1 class="title-txt">Generate a</h1>
+            <h1 class="title-txt"><span class="green-txt-color">secure and random</span> password</h1>
         </div>
 
+    <div class="paragraph-line">
         <div class="include-box">
             <h2 class="heading1">Include:</h2>
 
-            <div id="specifics-container">
+            <div class="specifics-container">
                 <button onclick="includeNumbersToggle()" id="numbers-btn">Numbers</button>
                 <button onclick="includeSpecialcharactersToggle()" id="specialcharacters-btn">Special Characters</button>
             </div>
-            <div id="specifics-container">
+            <div class="specifics-container">
                 <button onclick="upperCaseToggle()" id="uppercase-btn">Uppercase</button>
                 <button onclick="lowerCaseToggle()" id="lowercase-btn">Lowercase</button>
             </div>
         </div>  
 
-        <div class="generate-box">
-        <button onclick="generatePasswords()" class="generate-btn">Generate Passwords!</button>
+        <div class="include-box">
+            <h2 class="heading1">Number of characters?</h2>
+
+            <div id="number-container">
+                <button onclick="makeCharacters8()" id="eight-btn" class="number-btn">8</button>
+                <button onclick="makeCharacters12()" id="twelve-btn" class="number-btn">12</button>
+                <button onclick="makeCharacters16()" id="sixteen-btn" class="number-btn">18</button>
+                <button onclick="makeCharacters24()" id="twentyfour-btn" class="number-btn">24</button>
+            </div>
         </div>
+    </div>
+
+        <div>
+            <button onclick="generatePasswords()" class="generate-btn">Generate Passwords!</button>
+        </div>
+        
         <div id="generatedPasswordContainer">
             <p id="password1-el"></p>
             <p id="password2-el"></p>  
