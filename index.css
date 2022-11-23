@@ -8,7 +8,7 @@ body {
 }
 
 .green-txt-color{
-    color: #10B981;
+    color: #07a78c;
 }
 
 .title-txt {
@@ -27,7 +27,7 @@ body {
     width: 450px;
     height: 580px;
     border-radius: 10px;
-    border-left: 15px solid #10B981;
+    border-left: 15px solid #07a78c;
 }
 
 .specifics-container {
@@ -51,29 +51,35 @@ body {
 }
 
 #password1-el {
+    text-align: start;
     background-color: #273549;
+    border: none;
     padding: 10px;
     margin: 10px;
     width: 300px;
     height: 15px;
-    color: #10B981;
+    color: #07a78c;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 #password2-el {
+    text-align: start;
     background-color: #273549;
+    border: none;
     padding: 10px;
     margin: 10px;
     width: 300px;
     height: 15px;
-    color: #10B981;
+    color: #07a78c;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .generate-btn{
-    background-color: #10B981;
+    background-color: #07a78c;
     border-radius: 5px;
     border: none;
     padding: 30px 50px;

@@ -57,7 +57,7 @@ let password2El = document.getElementById("password2-el")
 function includeNumbersToggle() {
     if (includeNumbers === false) {
         includeNumbers = true
-        document.getElementById("numbers-btn").style.background = "#10B981"
+        document.getElementById("numbers-btn").style.background = "#07a78c"
     } else {
         includeNumbers = false
         document.getElementById("numbers-btn").style.background = "#da364c"
@@ -69,7 +69,7 @@ function includeNumbersToggle() {
 function includeSpecialcharactersToggle() {
     if (includeSpecialCharacters === false) {
         includeSpecialCharacters = true
-        document.getElementById("specialcharacters-btn").style.background = "#10B981"
+        document.getElementById("specialcharacters-btn").style.background = "#07a78c"
     } else {
         includeSpecialCharacters = false
         document.getElementById("specialcharacters-btn").style.background = "#da364c"
@@ -80,7 +80,7 @@ function includeSpecialcharactersToggle() {
 function upperCaseToggle() {
     if (upperCase === false) {
         upperCase = true
-        document.getElementById("uppercase-btn").style.background = "#10B981"
+        document.getElementById("uppercase-btn").style.background = "#07a78c"
     } else {
         upperCase = false
         document.getElementById("uppercase-btn").style.background = "#da364c"
@@ -91,7 +91,7 @@ function upperCaseToggle() {
 function lowerCaseToggle() {
     if (lowerCase === false) {
         lowerCase = true
-        document.getElementById("lowercase-btn").style.background = "#10B981"
+        document.getElementById("lowercase-btn").style.background = "#07a78c"
     } else {
         lowerCase = false
         document.getElementById("lowercase-btn").style.background = "#da364c"
@@ -103,21 +103,21 @@ let characterNumber = 0
 
 function makeCharacters8() {
     characterNumber = 8
-    document.getElementById("eight-btn").style.background = "#10B981"
+    document.getElementById("eight-btn").style.background = "#07a78c"
     document.getElementById("twelve-btn").style.background = "#da364c"
     document.getElementById("sixteen-btn").style.background = "#da364c"
     document.getElementById("twentyfour-btn").style.background = "#da364c"
 }
 function makeCharacters12() {
     characterNumber = 12
-    document.getElementById("twelve-btn").style.background = "#10B981"
+    document.getElementById("twelve-btn").style.background = "#07a78c"
     document.getElementById("eight-btn").style.background = "#da364c"
     document.getElementById("sixteen-btn").style.background = "#da364c"
     document.getElementById("twentyfour-btn").style.background = "#da364c"
 }
 function makeCharacters16() {
     characterNumber = 16
-    document.getElementById("sixteen-btn").style.background = "#10B981"
+    document.getElementById("sixteen-btn").style.background = "#07a78c"
     document.getElementById("twelve-btn").style.background = "#da364c"
     document.getElementById("eight-btn").style.background = "#da364c"
     document.getElementById("twentyfour-btn").style.background = "#da364c"
@@ -125,7 +125,7 @@ function makeCharacters16() {
 }
 function makeCharacters24() {
     characterNumber = 24
-    document.getElementById("twentyfour-btn").style.background = "#10B981"
+    document.getElementById("twentyfour-btn").style.background = "#07a78c"
     document.getElementById("twelve-btn").style.background = "#da364c"
     document.getElementById("sixteen-btn").style.background = "#da364c"
     document.getElementById("eight-btn").style.background = "#da364c"
@@ -245,4 +245,23 @@ function generatePasswords() {
         password1El.textContent += "No input"
         password2El.textContent += "No input"
     }
+}
+
+
+//Copy Passwords
+
+function copyPass1() {
+    let copyText = document.getElementById("password1-el")
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the password: " + copyText.value);
+}
+
+function copyPass2() {
+    let copyText = document.getElementById("password2-el")
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the password: " + copyText.value);
 }
