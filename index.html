@@ -8,13 +8,22 @@
             <h1 class="title-txt">Password Generator</h1>
             <p>Create a <span class="green-txt-color">secure and random</span> password</p>
         </div>
-    
-        <div id="btn-container">
+
+        <div class="include-box">
+            <h2 class="heading1">Include:</h2>
+
             <div id="specifics-container">
-                <button onclick="includeNumbersToggle()" id="specifics1-btn">Include Numbers</button>
-                <button onclick="includeSpecialcharactersToggle()" id="specifics2-btn">Include Special Characters</button>
+                <button onclick="includeNumbersToggle()" id="numbers-btn">Numbers</button>
+                <button onclick="includeSpecialcharactersToggle()" id="specialcharacters-btn">Special Characters</button>
             </div>
-            <button onclick="generatePasswords()" class="generate-btn">Generate Passwords!</button>
+            <div id="specifics-container">
+                <button onclick="upperCaseToggle()" id="uppercase-btn">Uppercase</button>
+                <button onclick="lowerCaseToggle()" id="lowercase-btn">Lowercase</button>
+            </div>
+        </div>  
+
+        <div class="generate-box">
+        <button onclick="generatePasswords()" class="generate-btn">Generate Passwords!</button>
         </div>
         <div id="generatedPasswordContainer">
             <p id="password1-el"></p>

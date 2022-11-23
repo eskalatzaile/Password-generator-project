@@ -17,22 +17,22 @@ body {
     margin: 0;
 }
 
-.title-container {
-    margin: 25px 0 30px 0;
-
+.heading1 {
+    margin: 0;
 }
 
 .body-container {
     background-color: #1F2937;
     margin: 20px auto;
-    padding: 40px;
+    padding: 50px;
     width: 400px;
-    height: 400px;
+    height: 480px;
     border-radius: 10px;
+    border-left: 15px solid #10B981;
 }
 
 #specifics-container {
-    margin: 30px 0 20px 0;
+    margin: 10px;
 }
 
 #generatedPasswordContainer{
@@ -68,7 +68,6 @@ body {
 }
 
 .generate-btn{
-    margin: 30px auto;
     background-color: #10B981;
     border-radius: 5px;
     border: none;
@@ -79,7 +78,15 @@ body {
     font-weight: bold;
 }
 
-#specifics1-btn{
+.generate-box {
+    margin: 30px;
+}
+
+.include-box {
+    margin: 30px;
+}
+
+#numbers-btn{
     background-color: #da364c;
     border-radius: 5px;
     border: none;
@@ -88,7 +95,7 @@ body {
     color: whitesmoke;
 }
 
-#specifics2-btn{
+#specialcharacters-btn{
     background-color: #da364c;
     border-radius: 5px;
     border: none;
@@ -97,4 +104,21 @@ body {
     color: whitesmoke;
 }
 
+#uppercase-btn{
+    background-color: #da364c;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+
+#lowercase-btn{
+    background-color: #da364c;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: whitesmoke;
+}
 
