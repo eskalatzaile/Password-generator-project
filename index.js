@@ -139,92 +139,107 @@ function generatePasswords() {
     if (includeNumbers === true && includeSpecialCharacters === false && upperCase === false && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*numbers.length)
+            let arrayIndex2 = Math.floor(Math.random()*numbers.length)
             password1El.textContent += numbers[arrayIndex]
-            password2El.textContent += numbers[arrayIndex]
+            password2El.textContent += numbers[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === true && upperCase === false && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*specialCharacters.length)
+            let arrayIndex2 = Math.floor(Math.random()*specialCharacters.length)
             password1El.textContent += specialCharacters[arrayIndex]
-            password2El.textContent += specialCharacters[arrayIndex]
+            password2El.textContent += specialCharacters[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === false && upperCase === true && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*upperCaseCharacters.length)
+            let arrayIndex2 = Math.floor(Math.random()*upperCaseCharacters.length)
             password1El.textContent += upperCaseCharacters[arrayIndex]
-            password2El.textContent += upperCaseCharacters[arrayIndex]
+            password2El.textContent += upperCaseCharacters[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === false && upperCase === false && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*lowerCaseCharacters.length)
+            let arrayIndex2 = Math.floor(Math.random()*lowerCaseCharacters.length)
             password1El.textContent += lowerCaseCharacters[arrayIndex]
-            password2El.textContent += lowerCaseCharacters[arrayIndex]
+            password2El.textContent += lowerCaseCharacters[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === true && upperCase === false && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*numbersAndSpecial.length)
+            let arrayIndex2 = Math.floor(Math.random()*numbersAndSpecial.length)
             password1El.textContent += numbersAndSpecial[arrayIndex]
-            password2El.textContent += numbersAndSpecial[arrayIndex]
+            password2El.textContent += numbersAndSpecial[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === true && upperCase === true && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*upperSpecial.length)
+            let arrayIndex2 = Math.floor(Math.random()*upperSpecial.length)
             password1El.textContent += upperSpecial[arrayIndex]
-            password2El.textContent += upperSpecial[arrayIndex]
+            password2El.textContent += upperSpecial[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === false && upperCase === true && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*characters.length)
+            let arrayIndex2 = Math.floor(Math.random()*characters.length)
             password1El.textContent += characters[arrayIndex]
-            password2El.textContent += characters[arrayIndex]
+            password2El.textContent += characters[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === false && upperCase === false && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*lowerNumbers.length)
+            let arrayIndex2 = Math.floor(Math.random()*lowerNumbers.length)
             password1El.textContent += lowerNumbers[arrayIndex]
-            password2El.textContent += lowerNumbers[arrayIndex]
+            password2El.textContent += lowerNumbers[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === true && upperCase === false && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*lowerSpecial.length)
+            let arrayIndex2 = Math.floor(Math.random()*lowerSpecial.length)
             password1El.textContent += lowerSpecial[arrayIndex]
-            password2El.textContent += lowerSpecial[arrayIndex]
+            password2El.textContent += lowerSpecial[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === false && upperCase === true && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*upperNumbers.length)
+            let arrayIndex2 = Math.floor(Math.random()*upperNumbers.length)
             password1El.textContent += upperNumbers[arrayIndex]
-            password2El.textContent += upperNumbers[arrayIndex]
+            password2El.textContent += upperNumbers[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === true && upperCase === true && lowerCase === false) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*upperNumberSpecial.length)
+            let arrayIndex2 = Math.floor(Math.random()*upperNumberSpecial.length)
             password1El.textContent += upperNumberSpecial[arrayIndex]
-            password2El.textContent += upperNumberSpecial[arrayIndex]
+            password2El.textContent += upperNumberSpecial[arrayIndex2]
         }
     } else if (includeNumbers === false && includeSpecialCharacters === true && upperCase === true && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*includingSpecialCharacters.length)
+            let arrayIndex2 = Math.floor(Math.random()*includingSpecialCharacters.length)
             password1El.textContent += includingSpecialCharacters[arrayIndex]
-            password2El.textContent += includingSpecialCharacters[arrayIndex]
+            password2El.textContent += includingSpecialCharacters[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === false && upperCase === true && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*includingNumbers.length)
+            let arrayIndex2 = Math.floor(Math.random()*includingNumbers.length)
             password1El.textContent += includingNumbers[arrayIndex]
-            password2El.textContent += includingNumbers[arrayIndex]
+            password2El.textContent += includingNumbers[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === true && upperCase === false && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*lowerNumberSpecial.length)
+            let arrayIndex2 = Math.floor(Math.random()*lowerNumberSpecial.length)
             password1El.textContent += lowerNumberSpecial[arrayIndex]
-            password2El.textContent += lowerNumberSpecial[arrayIndex]
+            password2El.textContent += lowerNumberSpecial[arrayIndex2]
         }
     } else if (includeNumbers === true && includeSpecialCharacters === true && upperCase === true && lowerCase === true) {
         for (let i = 0; i < characterNumber; i++){
             let arrayIndex = Math.floor(Math.random()*includingAll.length)
+            let arrayIndex2 = Math.floor(Math.random()*includingAll.length)
             password1El.textContent += includingAll[arrayIndex]
-            password2El.textContent += includingAll[arrayIndex]
+            password2El.textContent += includingAll[arrayIndex2]
         }
     } else {
         password1El.textContent += "No input"
