@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.green-txt-color{
+    color: #10B981;
+}
+
+.title-txt {
+    font-size: 30px;
+    margin: 0;
+}
+
+.title-container {
+    margin: 25px 0 30px 0;
+
+}
+
+.body-container {
+    background-color: #1F2937;
+    margin: 20px auto;
+    padding: 40px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#specifics-container {
+    margin: 30px 0 20px 0;
+}
+
+#generatedPasswordContainer{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding-top: 20px;
+    width: 400px;
+    height: auto;
+    border-top: 2px solid #273549;
+}
+
+#password1-el {
+    background-color: #273549;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 15px;
+    color: #10B981;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#password2-el {
+    background-color: #273549;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 15px;
+    color: #10B981;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.generate-btn{
+    margin: 30px auto;
+    background-color: #10B981;
+    border-radius: 5px;
+    border: none;
+    padding: 30px 50px;
+    margin: 20px auto;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#specifics1-btn{
+    background-color: #da364c;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+
+#specifics2-btn{
+    background-color: #da364c;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+
+
